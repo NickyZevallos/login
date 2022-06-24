@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* variables para css */
+:root {
+    --pepe: blue;
+    --font: "Poppins", sans-serif;   
+}
+body,
+html {
+    background-color: var(--pepe);
+    font-family: var (--font);
+    color: white;
+}
+
+.container {
+    background: salmon;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    margin-bottom: 50px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.login__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.inputs__container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    max-width: 600px;
+}
+.inputs__container  label {
+padding-bottom: 10px;
+}
+.inputs__container input {
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 0 20px;
+    border-radius: 20px;
+    color: var(--color-place);
+}
+input:focus {
+    outline: none;
+}
+.inputs__container button { 
+    height: 45px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px; 
+    cursor: pointer;
+    transition:  all 0.3s;
+}
+.inputs__container button:hover {
+    background-color: black;
+}
+.login__img {
+    display: none;
+}
+@media screen and (min-width: 1000px) {
+    body {
+        background: salmon;
+    }
+    
+}
+.login__container {
+    background: fuchsia;
+    max-width: 700px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+   border-radius: 20px;
+   flex-direction: row;
+}
+.login__img {
+    display: block;
+    margin: 0px auto;
+    text-align : center;
+    justify-content: center;
+    background-image: url(mari.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 60%;
+    border-radius: 50px 50px 50px 50px;
+    
+}
+.inputs__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.inputs__container label,
+.inputs__container input {
+    width: 70%;
+}
+.inputs__container button {
+    width: 70%;
+}
+.title {
+    max-width: 500px;
+    background-color: palevioletred;
+}
